@@ -7,24 +7,43 @@ android:orientation="vertical"
 xmlns:android="http://schemas.android.com/apk/res/android">
 
 <TextView
-    android:id="@+id/menuTV"
+    android:id="@+id/deliveryTV"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="top"
-    android:text="Menu"
-    android:textSize="100sp"
+    android:text="Delivery Info"
+    android:textSize="70sp"
 
     />
 
-<Button
-    android:id="@+id/burgersBTN"
+<TextView
+    android:id="@+id/contactTV"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="left"
-    android:text="Burgers"
+    android:text="Contact Info:443-957-4123"
     android:textSize="30sp"
 
     />
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Location:3600 Boston St. Baltimore,MD21224"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/hoursTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Delivery Hours:Mon-Sun 11am-9:30pm"
+        android:textSize="24sp"
+
+        />
+
 
 
 </LinearLayout>

@@ -51,4 +51,23 @@
 <!--    />-->
 
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        />
+
+    <TextView
+        android:id="@+id/LoadingCompleteTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Complete"
+        android:layout_below="@+id/progressbar"
+        android:textSize="15sp"
+        android:Viability="inviaible"
+        />
+
+
+
 </LinearLayout>
