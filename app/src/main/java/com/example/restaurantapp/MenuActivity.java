@@ -24,4 +24,6 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent incomingIntent = getIntent();
     }
+
+    
 }
