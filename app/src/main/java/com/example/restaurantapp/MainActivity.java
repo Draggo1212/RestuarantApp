@@ -19,12 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button deliveryBTN;
     Button doneBTN;
     String message;
-    private ProgressBar mProgressBar;
-    private TextView mLoadingText;
 
-    private int mProgressStatus = 0;
-
-    private Handler mHandler = new Handler();
 
 
     @Override
@@ -38,29 +33,6 @@ public class MainActivity extends AppCompatActivity {
         doneBTN = (Button) findViewById(R.id.doneBTN);
         message = "";
 
-        mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
-        mLoadingText = (TextView) findViewById(R.id.LoadingCompleteTV);
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (mProgressStatus < 100)
-                    mProgressStatus++;
-                    android.os.SystemClock.sleep(50);
-                    mHandler.post(new Runnable() {
-                      @Override
-                      public void run() {
-                          mProgressBar.setProgress(mProgressStatus);
-                      }
-                    });
-                    mHandler.post(new Runnable(){
-                        @Override
-                        public void run() {
-                            mLoadingText.setVisibility(View.VISIBLE);
-                        }
-                    });
-                }
-        });
 
 
         menuBTN.setOnClickListener(new View.OnClickListener() {

@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
     TextView menuTV;
     Button burgersBTN;
+
 
 
 
@@ -22,8 +26,12 @@ public class MenuActivity extends AppCompatActivity {
         menuTV = (TextView) findViewById(R.id.menuTV);
         burgersBTN = (Button) findViewById(R.id.burgersBTN);
 
+       
+
         Intent incomingIntent = getIntent();
+
+
     }
 
-    
+
 }
