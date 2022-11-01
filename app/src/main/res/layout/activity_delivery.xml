@@ -31,7 +31,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="Location:3600 Boston St. Baltimore,MD21224"
-        android:textSize="20sp"
+        android:textSize="30sp"
 
         />
     <TextView
@@ -40,7 +40,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="Delivery Hours:Mon-Sun 11am-9:30pm"
-        android:textSize="24sp"
+        android:textSize="30sp"
 
         />
 
